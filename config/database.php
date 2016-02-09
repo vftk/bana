@@ -55,8 +55,20 @@ return [
         'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
-            'database'  => env('DB_DATABASE', 'forge'),
-            'username'  => env('DB_USERNAME', 'forge'),
+            'database'  => env('DB_DATABASE', 'bana'),
+            'username'  => env('DB_USERNAME', 'root'),
+            'password'  => env('DB_PASSWORD', 'root'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],
+
+        'mysql' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST', 'localhost'),
+            'database'  => env('DB_DATABASE', 'bana_test'),
+            'username'  => env('DB_USERNAME', 'root'),
             'password'  => env('DB_PASSWORD', ''),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
@@ -73,6 +85,7 @@ return [
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
+            
         ],
 
         'sqlsrv' => [
