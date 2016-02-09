@@ -7,12 +7,12 @@ Ersätter bantider på papper.
 Laravel 5.2
 Bootstrap med SMTB
 
-## Style
+## Stilkontroll
 Style CI med preset: psr2
 
-## Tests
+## Tester
 Travis CI
 
-## Deploy
+## Leverans
 Automatik med Forge till https://www.vftk.se
 
