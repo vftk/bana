@@ -28,7 +28,7 @@
                             <label class="col-md-4 control-label">Medlemsnummer</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('member_id') }}" placeholder="Exempelvis: 2166">
+                                <input type="text" class="form-control" name="member_id" value="{{ old('member_id') }}" placeholder="Exempelvis: 2166">
                             </div>
                         </div>
 
@@ -36,7 +36,7 @@
                             <label class="col-md-4 control-label">Mobilnummer</label>
 
                             <div class="col-md-6">
-                                <input type="text" class="form-control" name="name" value="{{ old('mobile') }}" placeholder="070-1234567">
+                                <input type="text" class="form-control" name="mobile" value="{{ old('mobile') }}" placeholder="070-1234567">
                             </div>
                         </div>
 

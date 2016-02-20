@@ -1833,16 +1833,16 @@
         },
         {
             "name": "ekandreas/docker-bedrock",
-            "version": "0.8.11",
+            "version": "0.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ekandreas/docker-bedrock.git",
-                "reference": "302397d92dc5a76b607f03c622d22267caa20ae0"
+                "reference": "22d117c146c5d70e15da5ad631bf6b61c889783d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ekandreas/docker-bedrock/zipball/302397d92dc5a76b607f03c622d22267caa20ae0",
-                "reference": "302397d92dc5a76b607f03c622d22267caa20ae0",
+                "url": "https://api.github.com/repos/ekandreas/docker-bedrock/zipball/22d117c146c5d70e15da5ad631bf6b61c889783d",
+                "reference": "22d117c146c5d70e15da5ad631bf6b61c889783d",
                 "shasum": ""
             },
             "require": {
@@ -1865,7 +1865,7 @@
                 }
             ],
             "description": "Docker environment for Roots Bedrock projects",
-            "time": "2016-02-20 17:23:27"
+            "time": "2016-02-20 19:03:39"
         },
         {
             "name": "fzaninotto/faker",
