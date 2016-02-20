@@ -13,4 +13,6 @@ before_script:
   
 script:
   - vendor/bin/phpunit
+
+after_success:
   - curl -Ss https://forge.laravel.com/servers/63597/sites/141454/deploy/http?token=$FORGE_VFTK
