@@ -16,3 +16,8 @@ script:
 
 after_success:
   - curl -Ss https://forge.laravel.com/servers/63597/sites/141454/deploy/http?token=$FORGE_VFTK
+
+notifications:
+  on_success: always
+  on_failure: always
+  slack: vftk:$FORGE_VFTK_SLACK
