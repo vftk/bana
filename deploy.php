@@ -5,5 +5,5 @@ set('docker.image', 'laravel52');
 
 server('bana.dev', 'default')
     ->env('container', 'laravel')
-    ->env('docker.image','laravel52')
+    ->env('docker.image', 'laravel52')
     ->stage('development');
