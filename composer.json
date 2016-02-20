@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "vftk/bana",
+    "description": "Banbokning VFTK för medlemmar",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
@@ -13,7 +13,9 @@
         "mockery/mockery": "0.9.*",
         "phpunit/phpunit": "~4.0",
         "symfony/css-selector": "2.8.*|3.0.*",
-        "symfony/dom-crawler": "2.8.*|3.0.*"
+        "symfony/dom-crawler": "2.8.*|3.0.*",
+        "symfony/process": "3.*",
+        "ekandreas/docker-bedrock": "*"
     },
     "autoload": {
         "classmap": [
