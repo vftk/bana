@@ -8,7 +8,7 @@
                 <div class="panel-heading">Bantider</div>
 
                 <div class="panel-body">
-                    Du är inloggad!
+                    <div id="calendar"></div>
                 </div>
             </div>
         </div>
