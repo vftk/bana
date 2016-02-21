@@ -6,10 +6,10 @@ php:
 
 before_script:
   - cp .env.travis .env
-  - php artisan key:generate
   - mysql -e 'create database bana_test;'
   - composer self-update
   - composer install --no-interaction
+  - php artisan key:generate
   - php artisan migrate --force
   
 script:
