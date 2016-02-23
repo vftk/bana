@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Slot;
@@ -73,12 +72,11 @@ class SlotsController extends Controller
     public function update(Request $request, $id)
     {
         $slot = Slot::findOrFail($id);
-        if(!$slot->user_id) {
+        if (!$slot->user_id) {
             $slot->user_id=\Auth::user()->id;
             $slot->save();
             return "success";
-        }
-        else {
+        } else {
             return "error";
         }
     }
