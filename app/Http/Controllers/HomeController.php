@@ -44,6 +44,7 @@ class HomeController extends Controller
             foreach ($slots as $key => $slot) {
                 if (!$current_day || $current_day->day != $slot->day) {
                     if ($current_day) {
+                        $current_day->hours[] = $current_hour;
                         $result[]=$current_day;
                     }
                     $current_day = new \stdClass();
