@@ -1,1 +1,1 @@
-{{ $slot->hour }}:00
+{{ $slot->hour }}:00 Bana {{ $slot->court }}<br/>
