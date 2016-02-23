@@ -31,6 +31,8 @@ class HomeController extends Controller
 
     private function getSlotsData()
     {
+        setlocale(LC_TIME, 'Swedish');
+
         $result = [];
 
         $start = Carbon::now();
@@ -50,6 +52,7 @@ class HomeController extends Controller
                     $current_day = new \stdClass();
                     $current_day->day = $slot->day;
                     $current_day->weekday = Carbon::parse($slot->day)->dayOfWeek;
+                    $current_day->week = Carbon::parse($slot->day)->format('W');
                     $current_hour = null;
                 }
                 if (!$current_hour || $current_hour->hour != $slot->hour) {
