@@ -30,6 +30,8 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'HomeController@index');
     Route::get('/admin/add', 'AddSlots@index');
     Route::post('/admin/add', 'AddSlots@insert');
+
+    Route::resource('slots', 'SlotsController');
 });
 
 Route::group(['middleware' => 'web'], function () {
