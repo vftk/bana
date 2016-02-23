@@ -3,7 +3,7 @@
 	<hr/>
 	@foreach($hour->slots as $slot)
 		<p>
-			<button class="btn btn-success">Boka bana {{ $slot->court }}</button>
+			<button class="btn btn-success" data-toggle="modal" data-target="#book" data-id="{{ $slot->id }}">Boka bana {{ $slot->court }}</button>
 		</p>
 	@endforeach
 </div>
