@@ -40,6 +40,7 @@ class HomeController extends Controller
 
         if ($slots) {
             $current_day = null;
+            $current_hour = null;
             foreach ($slots as $key => $slot) {
                 if (!$current_day || $current_day->day != $slot->day) {
                     if ($current_day) {
@@ -48,10 +49,19 @@ class HomeController extends Controller
                     $current_day = new \stdClass();
                     $current_day->day = $slot->day;
                     $current_day->weekday = Carbon::parse($slot->day)->dayOfWeek;
-                    $current_day->slots = [];
+                    $current_hour = null;
                 }
-                $current_day->slots[] = $slot;
+                if (!$current_hour || $current_hour->hour != $slot->hour) {
+                    if ($current_hour) {
+                        $current_day->hours[] = $current_hour;
+                    }
+                    $current_hour = new \stdClass();
+                    $current_hour->hour = $slot->hour;
+                    $current_hour->slots = [];
+                }
+                $current_hour->slots[] = $slot;
             }
+            $current_day->hours[] = $current_hour;
             $result[]=$current_day;
         }
 
